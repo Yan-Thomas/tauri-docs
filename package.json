@@ -17,11 +17,14 @@
     "build:astro": "astro build",
     "build:i18n": "pnpm --filter docs-i18n-tracker run build",
     "build": "pnpm dev:setup && pnpm build:references && pnpm build:config && pnpm build:astro && pnpm build:i18n",
-    "preview": "astro preview"
+    "preview": "astro preview",
+    "lunaria:build": "lunaria build",
+    "lunaria:preview": "lunaria preview"
   },
   "dependencies": {
     "@astrojs/markdown-remark": "^4.2.1",
     "@astrojs/starlight": "^0.13.0",
+    "@lunariajs/core": "^0.0.28",
     "@types/json-schema": "^7.0.15",
     "astro": "^3.6.4",
     "astro-feelback": "^0.3.4",
