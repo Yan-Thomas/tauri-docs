@@ -16,7 +16,7 @@
     "build:config": "pnpm --filter config-generator run build",
     "build:astro": "astro build",
     "build:i18n": "pnpm --filter docs-i18n-tracker run build",
-    "build": "pnpm dev:setup && pnpm build:references && pnpm build:config && pnpm build:astro && pnpm build:i18n",
+    "build": "pnpm dev:setup && pnpm build:references && pnpm build:config && pnpm build:astro && pnpm lunaria:build",
     "preview": "astro preview",
     "lunaria:build": "lunaria build",
     "lunaria:preview": "lunaria preview"
